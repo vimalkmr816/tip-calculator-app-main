@@ -5,51 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <script src="https://kit.fontawesome.com/48e66ef29a.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/48e66ef29a.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="style.css">
-    <title>Frontend Mentor | Tip calculator app</title>
     <script src="main.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
 <body>
-    <div class="title">SPLI
-        <br>TTER
-    </div>
+    <div class="title">SPLI<br>TTER</div>
     <div class="container">
         <section class="input_fields">
-            <form class="input_form">
+            <form id="inp_form" class="input_form">
                 <div class="bill_amount">
                     <label ">Bill</label>
-                    <input type=" text " id=" bill_value " placeholder=" 142.55$ " required>
-                    <!-- <i class=" icons fa fa-usd "></i> -->
+                    <input type=" text" id="bill_value" placeholder="Enter bill amount" required>
+                        <!-- <i class=" icons fa fa-usd "></i> -->
                 </div>
-                <div class=" no_of_people ">
+                <div class="no_of_people">
                     <label>Number Of People</label>
-                    <input type=" text " id=" num_people " placeholder=" 5 " required>
+                    <input type="text" id="num_people" placeholder="Enter number of people " required>
                     <!-- <i class=" icons fas fa-users "></i> -->
                 </div>
-                <div class=" select_percent ">
+                <div class="select_percent">
                     <p>Select %</p>
-                    <div class=" buttons ">
-                        <button class=" btn " type=" button " id=" five_btn ">5%</button>
-                        <button class=" btn " type=" button " id=" ten_btn ">10%</button>
-                        <button class=" btn " type=" button " id=" fifteen_btn ">15%</button>
-                        <button class=" btn " type=" button " id=" twenty_five_btn ">20%</button>
-                        <button class=" btn " type=" button " id=" fifty_btn ">25%</button>
-                        <button class=" btn " type=" button " id=" custom_btn ">Custom</button>
+                    <div class="buttons">
+                        <button type="button" class="btn" id="_5_btn">5%</button>
+                        <button type="button" class="btn" id="_10_btn">10%</button>
+                        <button type="button" class="btn" id="_15_btn">15%</button>
+                        <button type="button" class="btn" id="_20_btn">20%</button>
+                        <button type="button" class="btn" id="_25_btn">25%</button>
+                        <button type="button" class="btn" id="custom_btn">Custom</button>
                     </div>
                 </div>
             </form>
         </section>
-        <section class=" output_fields ">
-            <div class=" output_section ">
+        <section class="output_fields ">
+            <div class="output_section ">
                 <div class=" tip_amount ">
                     <div class=" text_amount ">
                         Tip Amount <br>
                         <span>/ person</span>
                     </div>
-                    <div class=" num_amount " id=" tip_per_person ">
-                        $4.27
+                    <div class=" num_amount " id="tip_per_person">
+                        $0.00
                     </div>
                 </div>
                 <div class=" total ">
@@ -57,14 +55,14 @@
                         Total <br>
                         <span>/ person</span>
                     </div>
-                    <div class=" num_amount " id=" total_per_person ">
-                        $32.79
+                    <div class=" num_amount " id="total_per_person">
+                        $00.00
                     </div>
                 </div>
             </div>
 
             <div class=" reset_btn ">
-                <button id=" r_btn ">RESET</button>
+                <button type="reset" id="r_btn">RESET</button>
             </div>
         </section>
     </div>
@@ -73,6 +71,7 @@
         Coded by
         <a href=" https://github.com/vimalkmr816 ">Vimal Kumar</a>.
     </div>
+
 </body>
 
 </html>
