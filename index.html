@@ -5,63 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/48e66ef29a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Tip calculator app</title>
     <script src="main.js" defer></script>
 </head>
 
 <body>
+    <div class="title">SPLI
+        <br>TTER
+    </div>
     <div class="container">
         <section class="input_fields">
-            <form>
+            <form class="input_form">
                 <div class="bill_amount">
-                    <label>Bill</label>
-                    <input type="text" id="bill_value" required>
+                    <label ">Bill</label>
+                    <input type=" text " id=" bill_value " placeholder=" 142.55$ " required>
+                    <!-- <i class=" icons fa fa-usd "></i> -->
                 </div>
-                <div class="select_percent">
-                    <p>Select %</p>
-                    <div class="buttons">
-                        <button class="btn" type="button" id="five_btn">5%</button>
-                        <button class="btn" type="button" id="ten_btn">10%</button>
-                        <button class="btn" type="button" id="fifteen_btn">15%</button>
-                        <button class="btn" type="button" id="twenty_five_btn">20%</button>
-                        <button class="btn" type="button" id="fifty_btn">25%</button>
-                        <button class="btn" type="button" id="custom_btn">Custom</button>
-                    </div>
-                </div>
-                <div class="no_of_people">
+                <div class=" no_of_people ">
                     <label>Number Of People</label>
-                    <input type="text" id="num_people" placeholder="5$" required>
+                    <input type=" text " id=" num_people " placeholder=" 5 " required>
+                    <!-- <i class=" icons fas fa-users "></i> -->
+                </div>
+                <div class=" select_percent ">
+                    <p>Select %</p>
+                    <div class=" buttons ">
+                        <button class=" btn " type=" button " id=" five_btn ">5%</button>
+                        <button class=" btn " type=" button " id=" ten_btn ">10%</button>
+                        <button class=" btn " type=" button " id=" fifteen_btn ">15%</button>
+                        <button class=" btn " type=" button " id=" twenty_five_btn ">20%</button>
+                        <button class=" btn " type=" button " id=" fifty_btn ">25%</button>
+                        <button class=" btn " type=" button " id=" custom_btn ">Custom</button>
+                    </div>
                 </div>
             </form>
         </section>
-        <section class="output_fields">
-            <div class="tip_amount">
-                <div class="text_amount">
-                    Tip Amount <br>
-                    <span>/ person</span>
+        <section class=" output_fields ">
+            <div class=" output_section ">
+                <div class=" tip_amount ">
+                    <div class=" text_amount ">
+                        Tip Amount <br>
+                        <span>/ person</span>
+                    </div>
+                    <div class=" num_amount " id=" tip_per_person ">
+                        $4.27
+                    </div>
                 </div>
-                <div class="num_amount" id="tip_per_person">
-                    $4.27
+                <div class=" total ">
+                    <div class=" text_amount ">
+                        Total <br>
+                        <span>/ person</span>
+                    </div>
+                    <div class=" num_amount " id=" total_per_person ">
+                        $32.79
+                    </div>
                 </div>
             </div>
-            <div class="total">
-                <div class="text_amount">
-                    Total <br>
-                    <span>/ person</span>
-                </div>
-                <div class="num_amount" id="total_per_person">
-                    $32.79
-                </div>
-            </div>
-            <div class="reset_btn">
-                <button id="r_btn">RESET</button>
+
+            <div class=" reset_btn ">
+                <button id=" r_btn ">RESET</button>
             </div>
         </section>
     </div>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="#">Your Name Here</a>.
+    <div class=" attribution ">
+        Challenge by <a href=" https://www.frontendmentor.io?ref=challenge " target=" _blank ">Frontend Mentor</a>.
+        Coded by
+        <a href=" https://github.com/vimalkmr816 ">Vimal Kumar</a>.
     </div>
 </body>
 
